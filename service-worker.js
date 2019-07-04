@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/roulette/precache-manifest.6b6bbc5d826ff60b967261f7a6367a63.js"
+  "/roulette/precache-manifest.3cd8040fdd3db43b2c755a37ec68565b.js"
 );
 
 self.addEventListener('message', (event) => {
