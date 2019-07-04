@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 export default function useCandidates() {
   const data = useJsonp(
-    "http://api.meetup.com/hamburg-js/events/244146883/comments?callback=callback"
+    "https://api.meetup.com/hamburg-js/events/244146883/comments?callback=callback"
   );
   const [candidates, setCandidates] = useState();
 
