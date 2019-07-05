@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import App from "./App";
+import logo from "./logo.svg";
 
 const Stage = styled.div`
   position: fixed;
@@ -23,7 +24,7 @@ export default function Root() {
   return (
     <Stage>
       <App />
-      <Logo src="/hhjs.svg" />
+      <Logo src={logo} />
     </Stage>
   );
 }

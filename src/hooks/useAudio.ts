@@ -11,8 +11,9 @@ export default function useAudio(
     const a = document.createElement("audio");
     a.loop = loop;
     document.body.appendChild(a);
-    if (src) a.src = src;
     setTimeout(() => a.play(), delay);
+    if (src) a.src = src;
+
     const volume = fade ? 1 / fade / 10 : 1;
     function fadeOut() {
       if (fade <= 0) document.body.removeChild(a);

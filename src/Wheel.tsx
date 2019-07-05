@@ -33,7 +33,7 @@ interface Props {
   onDone: (winner: any) => void;
 }
 export default function Wheel({ candidates, spin, onDone }: Props) {
-  useAudio("/theme.mp3", { loop: true, fade: 5000 });
+  useAudio(`${process.env.PUBLIC_URL}/theme.mp3`, { loop: true, fade: 5000 });
   const spinning = useRef(spin);
 
   var startAngle = 0;

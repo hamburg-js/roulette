@@ -56,7 +56,7 @@ const Svg = styled.svg`
 `;
 
 export default function Arm() {
-  useAudio("/spin.mp3", { delay: 1100 });
+  useAudio(`${process.env.PUBLIC_URL}/spin.mp3`, { delay: 1100 });
   return (
     <Svg xmlns="http://www.w3.org/2000/svg" viewBox="-55 -220 520 564">
       <g fill="#F0B065" fillRule="evenodd">

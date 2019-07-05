@@ -3,7 +3,9 @@ import { useEffect, useState } from "react";
 import useFetch from "./useFetch";
 
 export default function useCandidates(eventId?: string) {
-  const example = useFetch(!eventId && "/example.json");
+  const example = useFetch(
+    !eventId && `${process.env.PUBLIC_URL}/example.json`
+  );
   const event = useJsonp(
     !!eventId &&
       `https://api.meetup.com/hamburg-js/events/${eventId}/comments?callback=callback`

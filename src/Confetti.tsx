@@ -148,7 +148,7 @@ export default function Confetti({ name, photo, url, color, onClick }: Props) {
       }
     });
   });
-  useAudio("/cheer.mp3");
+  useAudio(`${process.env.PUBLIC_URL}/cheer.mp3`);
   return (
     <Background style={{ backgroundColor: color }}>
       <Photo src={photo} />
