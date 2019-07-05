@@ -1,7 +1,13 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import useCanvas from "./hooks/useCanvas";
 import BottomButton from "./BottomButton";
+import useAudio from "./hooks/useAudio";
+
+const fadeIn = keyframes`
+  0 { opacity: 0 }
+  to { opacity: 1 }
+`;
 
 const Background = styled.div`
   position: absolute;
@@ -11,6 +17,8 @@ const Background = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  animation: ${fadeIn} 1s forwards;
 `;
 
 const Canvas = styled.canvas`
@@ -26,6 +34,7 @@ const Photo = styled.img`
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  object-fit: cover;
 `;
 
 const Name = styled.a`
@@ -139,6 +148,7 @@ export default function Confetti({ name, photo, url, color, onClick }: Props) {
       }
     });
   });
+  useAudio("/cheer.mp3");
   return (
     <Background style={{ backgroundColor: color }}>
       <Photo src={photo} />

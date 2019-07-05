@@ -1,9 +1,9 @@
 import React, { useRef, useEffect } from "react";
 import styled from "styled-components";
 import useCanvas from "./hooks/useCanvas";
+import useAudio from "./hooks/useAudio";
 
-const g = 5 + 5 * Math.random();
-const h = 1000 * g;
+const h = 5000;
 
 const Canvas = styled.canvas`
   position: absolute;
@@ -33,6 +33,7 @@ interface Props {
   onDone: (winner: any) => void;
 }
 export default function Wheel({ candidates, spin, onDone }: Props) {
+  useAudio("/theme.mp3", { loop: true, fade: 5000 });
   const spinning = useRef(spin);
 
   var startAngle = 0;
