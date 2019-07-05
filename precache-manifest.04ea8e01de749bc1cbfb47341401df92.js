@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6d0b22d9b72d1982c21e530914ab2b20",
+    "revision": "b35a2195a591fb8d0ff78622b5ed244a",
     "url": "/roulette/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/roulette/static/js/2.a6da83c4.chunk.js"
   },
   {
-    "revision": "7c4d86a40c05c3668668",
-    "url": "/roulette/static/js/main.be514367.chunk.js"
+    "revision": "7212c4a81570762e2ff2",
+    "url": "/roulette/static/js/main.77d4545d.chunk.js"
   },
   {
     "revision": "ee036c026ee6bd48b1d4",

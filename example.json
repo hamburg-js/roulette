@@ -1,0 +1,66 @@
+{
+  "data": [
+    {
+      "comment": "Please leave your README Roulette proposals as replies to this comment.",
+      "replies": [
+        {
+          "comment": "git-diff-node-modules https://github.com/ZauberNerd/git-diff-node-modules",
+          "member": {
+            "id": 13319193,
+            "name": "Björn B.",
+            "photo": {
+              "photo_link": "https://secure.meetupstatic.com/photos/member/a/b/6/0/member_65383872.jpeg"
+            }
+          }
+        },
+        {
+          "comment": "https://github.com/herschel666/tgif @tgif",
+          "member": {
+            "id": 183504862,
+            "name": "Emanuel K.",
+            "photo": {
+              "photo_link": "https://secure.meetupstatic.com/photos/member/d/c/1/c/member_245576348.jpeg"
+            }
+          }
+        },
+        {
+          "comment": "https://github.com/terabaud/web-audio-components 🎛",
+          "member": {
+            "id": 232658401,
+            "name": "Lea R.",
+            "photo": {
+              "photo_link": "https://secure.meetupstatic.com/photos/member/3/0/4/8/member_288072360.jpeg"
+            }
+          }
+        },
+        {
+          "comment": "https://github.com/kotzendekrabbe/meetsy",
+          "member": {
+            "id": 39218912,
+            "name": "Felicitas K.",
+            "photo": {
+              "photo_link": "https://secure.meetupstatic.com/photos/member/7/6/4/member_137881892.jpeg"
+            }
+          }
+        },
+        {
+          "comment": "https://github.com/fgnass/npm-as-nom",
+          "member": {
+            "id": 13733549,
+            "name": "Felix G.",
+            "photo": {
+              "photo_link": "https://secure.meetupstatic.com/photos/member/6/d/6/member_241981750.jpeg"
+            }
+          }
+        }
+      ],
+      "member": {
+        "id": 46926992,
+        "name": "Daniel D.",
+        "photo": {
+          "thumb_link": "https://secure.meetupstatic.com/photos/member/4/6/c/0/thumb_52998112.jpeg"
+        }
+      }
+    }
+  ]
+}
