@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/roulette/static/js/main.1b7359ad.chunk.js",
-    "main.js.map": "/roulette/static/js/main.1b7359ad.chunk.js.map",
+    "main.js": "/roulette/static/js/main.4999c27c.chunk.js",
+    "main.js.map": "/roulette/static/js/main.4999c27c.chunk.js.map",
     "runtime~main.js": "/roulette/static/js/runtime~main.461de433.js",
     "runtime~main.js.map": "/roulette/static/js/runtime~main.461de433.js.map",
     "static/js/2.d8796e00.chunk.js": "/roulette/static/js/2.d8796e00.chunk.js",
     "static/js/2.d8796e00.chunk.js.map": "/roulette/static/js/2.d8796e00.chunk.js.map",
     "index.html": "/roulette/index.html",
-    "precache-manifest.98b733937396fb5779a17af22eac9379.js": "/roulette/precache-manifest.98b733937396fb5779a17af22eac9379.js",
+    "precache-manifest.8a30898fe335131390fea1ed1c141933.js": "/roulette/precache-manifest.8a30898fe335131390fea1ed1c141933.js",
     "service-worker.js": "/roulette/service-worker.js",
     "static/media/logo.svg": "/roulette/static/media/logo.dafd9863.svg"
   }
