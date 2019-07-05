@@ -14,15 +14,14 @@ export default function useAudio(
     setTimeout(() => a.play(), delay);
     if (src) a.src = src;
 
-    const volume = fade ? 1 / fade / 10 : 1;
+    const decay = fade ? (1 / fade) * 100 : 1;
     function fadeOut() {
-      if (fade <= 0) document.body.removeChild(a);
+      if (a.volume <= 0) document.body.removeChild(a);
       else {
-        fade -= 100;
-        a.volume -= volume;
+        a.volume = Math.max(0, a.volume - decay);
         setTimeout(fadeOut, 100);
       }
     }
     return fadeOut;
-  }, [src]);
+  }, [src, delay, loop, fade]);
 }
