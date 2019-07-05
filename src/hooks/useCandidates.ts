@@ -1,12 +1,15 @@
 import useJsonp from "./useJsonp";
 import { useEffect, useState } from "react";
+import useFetch from "./useFetch";
 
-export default function useCandidates() {
-  const data = useJsonp(
-    "https://api.meetup.com/hamburg-js/events/244146883/comments?callback=callback"
+export default function useCandidates(eventId?: string) {
+  const example = useFetch(!eventId && "/example.json");
+  const event = useJsonp(
+    !!eventId &&
+      `https://api.meetup.com/hamburg-js/events/${eventId}/comments?callback=callback`
   );
+  const data = event || example;
   const [candidates, setCandidates] = useState();
-
   useEffect(() => {
     if (data) setCandidates(getCandidates(data));
   }, [data]);
