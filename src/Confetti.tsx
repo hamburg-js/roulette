@@ -50,16 +50,7 @@ function randomFromTo(a: number, b: number) {
 }
 
 var intensity = 150;
-var angle = 0;
 var speed = 2;
-var tiltAngle = 0;
-var TiltChangeCountdown = 5;
-
-type Color = {
-  r: number;
-  g: number;
-  b: number;
-};
 
 type Particle = {
   x: number;
@@ -68,7 +59,7 @@ type Particle = {
   d: number;
   color: string;
   tilt: number;
-  tiltAngleIncremental: number;
+  tiltAngleInc: number;
   tiltAngle: number;
 };
 
@@ -89,7 +80,7 @@ function initParticles(width: number, height: number) {
       d: Math.random() * intensity + 10,
       color: "rgba(" + color.r + ", " + color.g + ", " + color.b + ", 0.7)",
       tilt: Math.floor(10 * Math.random()) - 10,
-      tiltAngleIncremental: 0.07 * Math.random() + 0.05,
+      tiltAngleInc: 0.07 * Math.random() + 0.05,
       tiltAngle: 0
     });
   }
@@ -99,6 +90,8 @@ interface Props extends Candidate {
   onClick: () => void;
 }
 export default function Confetti({ name, photo, url, color, onClick }: Props) {
+  let angle = 0;
+
   const ref = useCanvas((ctx, { width, height }) => {
     if (!particles.length) {
       initParticles(width, height);
@@ -114,11 +107,8 @@ export default function Confetti({ name, photo, url, color, onClick }: Props) {
     });
 
     angle += 0.01;
-    tiltAngle += 0.1;
-    TiltChangeCountdown--;
-
     particles.forEach((c, a) => {
-      c.tiltAngle += c.tiltAngleIncremental;
+      c.tiltAngle += c.tiltAngleInc;
       c.y += (Math.cos(angle + c.d) + 1 + c.r / speed) / 2;
       c.x += Math.sin(angle);
       c.tilt = 15 * Math.sin(c.tiltAngle - a / 3);
