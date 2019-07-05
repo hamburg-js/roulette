@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.js": "/roulette/static/js/main.77d4545d.chunk.js",
-    "main.js.map": "/roulette/static/js/main.77d4545d.chunk.js.map",
+    "main.js": "/roulette/static/js/main.6b8656f4.chunk.js",
+    "main.js.map": "/roulette/static/js/main.6b8656f4.chunk.js.map",
     "runtime~main.js": "/roulette/static/js/runtime~main.461de433.js",
     "runtime~main.js.map": "/roulette/static/js/runtime~main.461de433.js.map",
-    "static/js/2.a6da83c4.chunk.js": "/roulette/static/js/2.a6da83c4.chunk.js",
-    "static/js/2.a6da83c4.chunk.js.map": "/roulette/static/js/2.a6da83c4.chunk.js.map",
+    "static/js/2.d8796e00.chunk.js": "/roulette/static/js/2.d8796e00.chunk.js",
+    "static/js/2.d8796e00.chunk.js.map": "/roulette/static/js/2.d8796e00.chunk.js.map",
     "index.html": "/roulette/index.html",
-    "precache-manifest.04ea8e01de749bc1cbfb47341401df92.js": "/roulette/precache-manifest.04ea8e01de749bc1cbfb47341401df92.js",
-    "service-worker.js": "/roulette/service-worker.js"
+    "precache-manifest.337056421079d9e8be83e106bf1d4921.js": "/roulette/precache-manifest.337056421079d9e8be83e106bf1d4921.js",
+    "service-worker.js": "/roulette/service-worker.js",
+    "static/media/logo.svg": "/roulette/static/media/logo.dafd9863.svg"
   }
 }
