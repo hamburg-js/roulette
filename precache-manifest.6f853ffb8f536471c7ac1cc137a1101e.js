@@ -1,15 +1,15 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "687c52b078756cc282e7debcc7b6078c",
+    "revision": "777ad958e7c4e699f0918f04d464592e",
     "url": "/roulette/index.html"
   },
   {
-    "revision": "43517ef3502b42484db6",
-    "url": "/roulette/static/js/2.d8796e00.chunk.js"
+    "revision": "f4119761b1cd80fc339b",
+    "url": "/roulette/static/js/2.0251a4f6.chunk.js"
   },
   {
-    "revision": "dd7f5a476ff0ebfbeab8",
-    "url": "/roulette/static/js/main.4999c27c.chunk.js"
+    "revision": "55cdcacd86f6bc5fb542",
+    "url": "/roulette/static/js/main.29eef2cb.chunk.js"
   },
   {
     "revision": "ee036c026ee6bd48b1d4",
