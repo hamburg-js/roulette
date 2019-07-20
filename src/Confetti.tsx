@@ -3,6 +3,10 @@ import styled, { keyframes } from "styled-components";
 import useCanvas from "./hooks/useCanvas";
 import BottomButton from "./BottomButton";
 import useAudio from "./hooks/useAudio";
+import useCountdown from "./hooks/useCountDown";
+import ReadMe from "./ReadMe";
+
+const README_SECONDS = 60 * 3;
 
 const fadeIn = keyframes`
   0 { opacity: 0 }
@@ -87,9 +91,9 @@ function initParticles(width: number, height: number) {
 }
 
 interface Props extends Candidate {
-  onClick: () => void;
+  onDone: () => void;
 }
-export default function Confetti({ name, photo, url, color, onClick }: Props) {
+export default function Confetti({ name, photo, url, color, onDone }: Props) {
   let angle = 0;
 
   const ref = useCanvas((ctx, { width, height }) => {
@@ -139,14 +143,27 @@ export default function Confetti({ name, photo, url, color, onClick }: Props) {
     });
   });
   useAudio(`${process.env.PUBLIC_URL}/cheer.mp3`);
+  const [countDown, startCountDown, abortCountDown] = useCountdown(
+    README_SECONDS,
+    onDone
+  );
   return (
     <Background style={{ backgroundColor: color }}>
       <Photo src={photo} />
-      <Name href={url}>{name}</Name>
+      <Name>{name}</Name>
       <Canvas ref={ref} />
-      <BottomButton style={{ color }} onClick={onClick}>
-        Next...
-      </BottomButton>
+
+      {countDown ? (
+        <ReadMe
+          url={url}
+          percentRemaining={(countDown / README_SECONDS) * 100}
+          onClose={abortCountDown}
+        />
+      ) : (
+        <BottomButton style={{ color }} onClick={startCountDown}>
+          README!
+        </BottomButton>
+      )}
     </Background>
   );
 }
