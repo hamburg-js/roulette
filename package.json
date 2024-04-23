@@ -40,6 +40,6 @@
     "@types/lodash": "^4.14.136",
     "@types/qrcode.react": "^0.8.2",
     "@types/styled-components": "^4.1.16",
-    "gh-pages": "^2.0.1"
+    "gh-pages": "^5.0.0"
   }
 }
